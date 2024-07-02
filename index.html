@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitonic Sort using WebGPU</title>
+    <style>
+      #canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="1024" height="500"></canvas>
+    <div>
+      <div>
+        <label>
+          Array length: 
+          <input type="range" id="data-length-range" min="64" max="4096" value="1024">
+        </label>
+        <button type="button" id="reset-button">Reset</button>
+      </div>
+      <button type="button" id="start-animation-button">Start Animation</button>
+      <button type="button" id="start-measure-button">Start Measure</button>
+      <script type="module" src="/src/main.ts"></script>
+      <div id="measure-result"></div>
+    </div>
+  </body>
+</html>
